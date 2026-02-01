@@ -9,4 +9,3 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="antialiased font-sans overflow-x-hidden">

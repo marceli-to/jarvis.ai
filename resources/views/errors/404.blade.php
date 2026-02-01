@@ -1,6 +1,7 @@
 @section('title', '404 – Jarvis')
 @section('description', 'Page not found')
 @include('partials.head')
+@include('partials.body')
 
 @include('partials.background')
 

@@ -1,6 +1,7 @@
 @section('title', $project['title'] . ' – Jarvis')
 @section('description', $project['description'])
 @include('partials.head')
+@include('partials.body')
 
 @include('partials.background')
 
