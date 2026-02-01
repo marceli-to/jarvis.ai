@@ -55,57 +55,59 @@
                 </div>
             </div>
 
-            <!-- Features -->
-            <div class="card mb-12 animate-slide-up delay-150">
-                <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
-                <ul class="space-y-3">
-                    @if(isset($project['features']) && is_array($project['features']))
-                        @foreach($project['features'] as $feature)
+            <div class="flex flex-col space-y-24">
+                <!-- Features -->
+                <div class="animate-slide-up delay-150">
+                    <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
+                    <ul class="space-y-3">
+                        @if(isset($project['features']) && is_array($project['features']))
+                            @foreach($project['features'] as $feature)
+                                <li class="flex items-start gap-3">
+                                    <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                                    <span class="text-muted">{{ $feature }}</span>
+                                </li>
+                            @endforeach
+                        @else
                             <li class="flex items-start gap-3">
                                 <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
-                                <span class="text-muted">{{ $feature }}</span>
+                                <span class="text-muted">Feature details coming soon</span>
                             </li>
-                        @endforeach
-                    @else
-                        <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
-                            <span class="text-muted">Feature details coming soon</span>
-                        </li>
-                    @endif
-                </ul>
-            </div>
-
-            @if(isset($project['commands']))
-            <!-- Commands -->
-            <div class="card mb-12 animate-slide-up delay-225">
-                <h2 class="text-xl font-semibold text-white mb-6">Commands</h2>
-                <div class="space-y-4">
-                    @foreach($project['commands'] as $cmd => $desc)
-                        <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                            <code class="text-emerald-400 font-mono text-sm bg-white/5 px-2 py-1 rounded shrink-0">{{ $cmd }}</code>
-                            <span class="text-subtle text-sm">{{ $desc }}</span>
-                        </div>
-                    @endforeach
+                        @endif
+                    </ul>
                 </div>
-            </div>
-            @endif
 
-            <!-- How it works -->
-            <div class="card mb-12 animate-slide-up delay-300">
-                <h2 class="text-xl font-semibold text-white mb-6">How It Works</h2>
-                <p class="text-muted leading-relaxed">{{ $project['how_it_works'] }}</p>
-            </div>
+                @if(isset($project['commands']))
+                <!-- Commands -->
+                <div class="animate-slide-up delay-225">
+                    <h2 class="text-xl font-semibold text-white mb-6">Commands</h2>
+                    <div class="space-y-4">
+                        @foreach($project['commands'] as $cmd => $desc)
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+                                <code class="text-emerald-400 font-mono text-sm bg-white/5 px-2 py-1 rounded shrink-0">{{ $cmd }}</code>
+                                <span class="text-subtle text-sm">{{ $desc }}</span>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endif
 
-            <!-- Tech Stack -->
-            <div class="card mb-12 animate-slide-up delay-375">
-                <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
-                <div class="grid sm:grid-cols-2 gap-4">
-                    @foreach($project['tech'] as $name => $desc)
-                        <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">{{ $name }}</h3>
-                            <p class="text-sm text-subtle">{{ $desc }}</p>
-                        </div>
-                    @endforeach
+                <!-- How it works -->
+                <div class="animate-slide-up delay-300">
+                    <h2 class="text-xl font-semibold text-white mb-6">How It Works</h2>
+                    <p class="text-muted leading-relaxed">{{ $project['how_it_works'] }}</p>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="animate-slide-up delay-375">
+                    <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        @foreach($project['tech'] as $name => $desc)
+                            <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
+                                <h3 class="text-white mb-1">{{ $name }}</h3>
+                                <p class="text-sm text-subtle">{{ $desc }}</p>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
             

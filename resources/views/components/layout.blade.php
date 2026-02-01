@@ -13,6 +13,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        @view-transition {
+            navigation: auto;
+        }
+    </style>
 </head>
 <body class="antialiased font-sans overflow-x-hidden">
     <x-background />

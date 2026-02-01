@@ -221,17 +221,59 @@ body {
     @apply text-gray-400;
 }
 
-/* Cards */
+/* Cards - animated border */
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
 .card {
     @apply rounded-xl p-6;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-color);
-    transition: background 50ms ease-out, border-color 50ms ease-out, transform 100ms ease-out, box-shadow 100ms ease-out;
+    position: relative;
+    transition: background 150ms ease-out, border-color 150ms ease-out;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(
+        from var(--angle),
+        transparent 0%,
+        transparent 70%,
+        rgba(167, 139, 250, 0.9) 75%,
+        rgba(59, 130, 246, 0.9) 85%,
+        rgba(167, 139, 250, 0.9) 95%,
+        transparent 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+    pointer-events: none;
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--border-color-hover);
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.card:hover::before {
+    opacity: 1;
+    animation: angle-spin 1.25s linear forwards;
+}
+
+@keyframes angle-spin {
+    0% { --angle: 0deg; opacity: 1; }
+    60% { opacity: 1; }
+    100% { --angle: 270deg; opacity: 0; }
 }
 
 .card-interactive {
@@ -341,6 +383,7 @@ body {
 }
 
 .animate-slide-up {
+    opacity: 0;
     animation: slide-up 0.5s ease-out forwards;
 }
 
@@ -351,6 +394,11 @@ body {
 .delay-300 { animation-delay: 300ms; }
 .delay-375 { animation-delay: 375ms; }
 .delay-450 { animation-delay: 450ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+.delay-900 { animation-delay: 900ms; }
 
 .stagger > * {
     opacity: 0;
@@ -411,4 +459,11 @@ body {
 /* Selection */
 ::selection {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* View Transitions */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
 }
