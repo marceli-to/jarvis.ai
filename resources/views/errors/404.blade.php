@@ -1,21 +1,6 @@
-@section('title', '404 – Jarvis')
-@section('description', 'Page not found')
-@include('partials.head')
+<x-layout title="404 – Jarvis" description="Page not found">
 
-@component('partials.body')
-
-@include('partials.background')
-
-<div id="app" class="relative z-10">
-    
-    <!-- Navigation -->
-    <nav class="nav fixed top-0 left-0 right-0 z-50">
-        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
-            <a href="/" class="text-white">Jarvis</a>
-        </div>
-    </nav>
-
-    <main class="min-h-screen flex items-center justify-center">
+    <main class="min-h-screen flex items-center justify-center -mt-[var(--header-height)]">
         <div class="text-center px-6">
             <h1 class="text-8xl sm:text-9xl font-bold text-white mb-6 animate-slide-up">404</h1>
             <p class="text-xl text-muted mb-10 animate-slide-up delay-75">This is not the bot you're looking for.</p>
@@ -28,8 +13,4 @@
         </div>
     </main>
 
-    @include('partials.footer')
-    
-</div>
-
-@endcomponent
+</x-layout>
