@@ -178,6 +178,39 @@ $projects = [
         'how_it_works' => 'Friends access the app with a shared password, enter their name, and vote on their preferred trip type and travel period. Votes are stored and everyone can see the current standings. Users can edit their vote anytime. The bold, fluid design makes planning feel fun.',
         'github' => null,
     ],
+    'aicms' => [
+        'slug' => 'aicms',
+        'icon' => '✨',
+        'iconColor' => 'cyan',
+        'title' => 'AI CMS',
+        'tagline' => 'Edit your website with natural language',
+        'status' => 'Live',
+        'tags' => ['Laravel', 'Livewire', 'Claude API'],
+        'link' => 'https://github.com/marceli-to/aicms',
+        'description' => 'A Laravel package that adds an AI-powered content editor to any site. No admin panel needed — just chat with Claude to edit text, and it updates your files directly. Change history with undo, beautiful glassmorphic UI.',
+        'features' => [
+            'Natural language content editing',
+            'Works with Blade templates and Markdown files',
+            'Change history with one-click undo',
+            'Configurable editable paths',
+            'Uses your existing Laravel auth',
+            'Glassmorphic chat UI',
+            'Install via Composer in minutes',
+        ],
+        'commands' => [
+            'composer require marceli-to/aicms' => 'Install the package',
+            'php artisan vendor:publish --tag=aicms-config' => 'Publish config file',
+            'php artisan migrate' => 'Create change history table',
+        ],
+        'tech' => [
+            'Laravel 12' => 'Package built for the latest Laravel',
+            'Livewire 3' => 'Reactive chat interface',
+            'Claude API' => 'Anthropic\'s AI for natural language understanding',
+            'Tailwind CSS' => 'Beautiful glassmorphic design',
+        ],
+        'how_it_works' => 'Install the package, configure which files are editable (Blade views, Markdown, etc.), and visit /aicms. Type what you want to change — "Update the homepage title to Welcome" — and Claude reads the file, makes the edit, and saves it. Every change is logged so you can undo anytime.',
+        'github' => 'https://github.com/marceli-to/aicms',
+    ],
 ];
 
 Route::get('/', function () use ($projects) {
