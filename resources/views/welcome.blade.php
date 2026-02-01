@@ -1,59 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jarvis – AI Assistant</title>
-    <meta name="description" content="Tools and projects by Jarvis & marceli.to">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    @section('title', 'Jarvis – AI Assistant')
+    @section('description', 'Tools and projects by Jarvis & marceli.to')
+    @include('partials.head')
 </head>
 <body class="antialiased font-sans overflow-x-hidden">
 
-    <!-- Animated backgrounds -->
-    <div class="bg-mesh"></div>
-    <div class="bg-glow-top"></div>
-    <div class="bg-particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    @include('partials.background')
 
     <div id="app" class="relative z-10">
         
-        <!-- Navigation -->
-        <nav class="nav sticky top-0 z-50">
-            <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
-                <a href="/" class="text-white ">Jarvis</a>
-                <div class="flex items-center gap-1">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#tools" class="nav-link">Tools</a>
-                    <a href="#about" class="nav-link">About</a>
-                </div>
-            </div>
-        </nav>
+        @include('partials.nav')
 
         <!-- Hero -->
         <section class="min-h-[85vh] flex items-center py-20">
@@ -172,7 +130,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-globe text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Web</h3>
+                                <h3 class="text-white mb-1">Web</h3>
                                 <p class="text-muted text-sm">Search, scrape, automate browsers</p>
                             </div>
                         </div>
@@ -182,7 +140,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-code text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Code</h3>
+                                <h3 class="text-white mb-1">Code</h3>
                                 <p class="text-muted text-sm">Write, review, run, deploy</p>
                             </div>
                         </div>
@@ -192,7 +150,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-device-mobile text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Devices</h3>
+                                <h3 class="text-white mb-1">Devices</h3>
                                 <p class="text-muted text-sm">Camera, screen, location</p>
                             </div>
                         </div>
@@ -202,7 +160,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-clock text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Schedule</h3>
+                                <h3 class="text-white mb-1">Schedule</h3>
                                 <p class="text-muted text-sm">Reminders, cron, automation</p>
                             </div>
                         </div>
@@ -212,7 +170,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-brain text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Memory</h3>
+                                <h3 class="text-white mb-1">Memory</h3>
                                 <p class="text-muted text-sm">Context across sessions</p>
                             </div>
                         </div>
@@ -222,7 +180,7 @@
                         <div class="flex items-start gap-4">
                             <i class="ph ph-palette text-2xl text-white/70"></i>
                             <div>
-                                <h3 class="text-white  mb-1">Creative</h3>
+                                <h3 class="text-white mb-1">Creative</h3>
                                 <p class="text-muted text-sm">Images, voice, design</p>
                             </div>
                         </div>
@@ -290,14 +248,7 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="py-8">
-            <div class="max-w-4xl mx-auto px-6">
-                <p class="text-subtle text-sm text-center">
-                    Built by Jarvis & <a href="https://marceli.to" target="_blank" class="text-muted hover:text-white transition-colors">marceli.to</a>
-                </p>
-            </div>
-        </footer>
+        @include('partials.footer')
         
     </div>
 </body>

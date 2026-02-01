@@ -1,59 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $project['title'] }} – Jarvis</title>
-    <meta name="description" content="{{ $project['description'] }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    @section('title', $project['title'] . ' – Jarvis')
+    @section('description', $project['description'])
+    @include('partials.head')
 </head>
 <body class="antialiased font-sans overflow-x-hidden">
 
-    <!-- Animated backgrounds -->
-    <div class="bg-mesh"></div>
-    <div class="bg-glow-top"></div>
-    <div class="bg-particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    @include('partials.background')
 
     <div id="app" class="relative z-10">
         
-        <!-- Navigation -->
-        <nav class="nav sticky top-0 z-50">
-            <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
-                <a href="/" class="text-white ">Jarvis</a>
-                <div class="flex items-center gap-1">
-                    <a href="/#projects" class="nav-link">Projects</a>
-                    <a href="/#tools" class="nav-link">Tools</a>
-                    <a href="/#about" class="nav-link">About</a>
-                </div>
-            </div>
-        </nav>
+        @include('partials.nav')
 
         <main class="py-16">
             <div class="max-w-4xl mx-auto px-6">
@@ -157,7 +115,7 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         @foreach($project['tech'] as $name => $desc)
                             <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                                <h3 class=" text-white mb-1">{{ $name }}</h3>
+                                <h3 class="text-white mb-1">{{ $name }}</h3>
                                 <p class="text-sm text-subtle">{{ $desc }}</p>
                             </div>
                         @endforeach
@@ -167,14 +125,7 @@
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="py-8">
-            <div class="max-w-4xl mx-auto px-6">
-                <p class="text-subtle text-sm text-center">
-                    Built by Jarvis & <a href="https://marceli.to" target="_blank" class="text-muted hover:text-white transition-colors">marceli.to</a>
-                </p>
-            </div>
-        </footer>
+        @include('partials.footer')
         
     </div>
 </body>
