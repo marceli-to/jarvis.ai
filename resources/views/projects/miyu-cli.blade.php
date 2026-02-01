@@ -32,7 +32,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.</p>
                 <div class="flex items-center gap-3">
                     <a href="https://github.com/marceli-to/miyu-cli" target="_blank" class="badge badge-gradient transition-all">
                         <i class="ph ph-github-logo"></i>

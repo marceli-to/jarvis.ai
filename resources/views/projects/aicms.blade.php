@@ -32,7 +32,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A Laravel package that adds an AI-powered content editor to any site. No admin panel needed — just chat with Claude to edit text, and it updates your files directly. Change history with undo, beautiful glassmorphic UI.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A Laravel package that adds an AI-powered content editor to any site. No admin panel needed — just chat with Claude to edit text, and it updates your files directly. Change history with undo, beautiful glassmorphic UI.</p>
                 <div class="flex items-center gap-3">
                     <a href="https://github.com/marceli-to/aicms" target="_blank" class="badge badge-gradient transition-all">
                         <i class="ph ph-github-logo"></i>

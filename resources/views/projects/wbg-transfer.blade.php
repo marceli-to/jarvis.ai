@@ -32,7 +32,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.</p>
             </div>
 
             <!-- Features -->

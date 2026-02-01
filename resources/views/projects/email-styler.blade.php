@@ -33,7 +33,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A local AI tool that learns your email writing style and helps you write new emails that sound exactly like you. 100% local — uses Ollama for generation, no data leaves your machine.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A local AI tool that learns your email writing style and helps you write new emails that sound exactly like you. 100% local — uses Ollama for generation, no data leaves your machine.</p>
             </div>
 
             <!-- Features -->

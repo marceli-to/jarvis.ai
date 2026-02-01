@@ -32,7 +32,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together — all wrapped in a bold, glassmorphic design.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together — all wrapped in a bold, glassmorphic design.</p>
             </div>
 
             <!-- Features -->

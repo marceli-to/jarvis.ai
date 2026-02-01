@@ -33,7 +33,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets. Ported from a complex Java/Keycloak stack to a clean Laravel application.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets. Ported from a complex Java/Keycloak stack to a clean Laravel application.</p>
             </div>
 
             <!-- Features -->

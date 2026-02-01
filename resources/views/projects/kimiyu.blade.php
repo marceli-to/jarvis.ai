@@ -31,7 +31,7 @@
 
             <!-- Description -->
             <div class="mb-16 animate-slide-up delay-75">
-                <p class="text-2xl text-muted leading-relaxed mb-8">A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.</p>
+                <p class="text-xl text-muted leading-relaxed mb-8">A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.</p>
                 <div class="flex items-center gap-3">
                     <a href="https://kimiyu.ch" target="_blank" class="badge badge-gradient transition-all group">
                         Visit website
