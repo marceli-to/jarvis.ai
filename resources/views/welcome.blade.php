@@ -61,6 +61,8 @@
                     <project-card slug="email-styler" icon="📧" icon-color="blue" title="Email Styler" description="Local AI that learns your writing style and generates emails that sound like you. 100% offline with Ollama." :tags="['Ollama', 'Node.js', 'RAG']" status="Live"></project-card>
                     <project-card slug="miyu-cli" icon="🖥️" icon-color="purple" title="Miyu CLI" description="A simple, stylish CLI for chatting with local Ollama models." :tags="['Node.js', 'Ollama', 'CLI']" status="Live"></project-card>
                     <project-card slug="kimiyu" icon="💰" icon-color="green" title="kimiyu" description="Expense splitting app for couples. Simple, fair, no spreadsheets needed." :tags="['Laravel', 'Vue', 'Tailwind']" status="Beta"></project-card>
+                    <project-card slug="doodle-horde-2026" icon="✈️" icon-color="orange" title="Doodle Horde 2026" description="Group trip voting app. Vote on destinations and dates, see what everyone prefers." :tags="['Laravel', 'Livewire', 'Tailwind']" status="Live"></project-card>
+                    <project-card slug="aicms" icon="✨" icon-color="cyan" title="AI CMS" description="Edit website content via chat. Just tell it what to change — no admin panel needed." :tags="['Laravel', 'Livewire', 'Claude API']" status="Live"></project-card>
                 </div>
             </div>
         </section>
@@ -72,12 +74,12 @@
                     <p class="text-gray-500">What Jarvis can do for you</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <tool-card icon="🌐" title="Web Browsing" description="Search the web, fetch pages, extract content, and automate browser tasks."></tool-card>
-                    <tool-card icon="💻" title="Code & Dev" description="Write, review, and debug code. Run shell commands. Manage git repos."></tool-card>
-                    <tool-card icon="📱" title="Device Control" description="Camera snaps, screen recordings, location access on paired devices."></tool-card>
-                    <tool-card icon="⏰" title="Reminders & Cron" description="Schedule tasks, set reminders, and run periodic checks."></tool-card>
-                    <tool-card icon="📝" title="Memory" description="Remember context across sessions. Learn preferences over time."></tool-card>
-                    <tool-card icon="🎨" title="Creative" description="Generate images, text-to-speech, and help with creative projects."></tool-card>
+                    <tool-card icon="globe" title="Web Browsing" description="Search the web, fetch pages, extract content, and automate browser tasks."></tool-card>
+                    <tool-card icon="code" title="Code & Dev" description="Write, review, and debug code. Run shell commands. Manage git repos."></tool-card>
+                    <tool-card icon="device-mobile" title="Device Control" description="Camera snaps, screen recordings, location access on paired devices."></tool-card>
+                    <tool-card icon="clock" title="Reminders & Cron" description="Schedule tasks, set reminders, and run periodic checks."></tool-card>
+                    <tool-card icon="brain" title="Memory" description="Remember context across sessions. Learn preferences over time."></tool-card>
+                    <tool-card icon="palette" title="Creative" description="Generate images, text-to-speech, and help with creative projects."></tool-card>
                 </div>
             </div>
         </section>

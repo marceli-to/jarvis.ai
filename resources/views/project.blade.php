@@ -31,7 +31,7 @@
             </div>
         </nav>
 
-        <main class="pt-32 pb-24">
+        <main class="py-16">
             <div class="max-w-4xl mx-auto px-6">
                 <!-- Back link -->
                 <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-8">
@@ -40,33 +40,23 @@
 
                 <!-- Header -->
                 <div class="mb-12">
-                    <div class="flex items-start gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl
-                            @if($project['iconColor'] === 'blue') bg-blue-100
-                            @elseif($project['iconColor'] === 'purple') bg-purple-100
-                            @elseif($project['iconColor'] === 'green') bg-green-100
-                            @else bg-cyan-100
-                            @endif">
-                            {{ $project['icon'] }}
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h1 class="text-4xl font-bold">{{ $project['title'] }}</h1>
+                            <span class="text-xs px-2 py-1 rounded-full
+                                @if($project['status'] === 'Live') bg-green-100 text-green-700
+                                @elseif($project['status'] === 'In Progress') bg-yellow-100 text-yellow-700
+                                @elseif($project['status'] === 'Beta') bg-purple-100 text-purple-700
+                                @else bg-gray-100 text-gray-600
+                                @endif">
+                                {{ $project['status'] }}
+                            </span>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-3 mb-2">
-                                <h1 class="text-4xl font-bold">{{ $project['title'] }}</h1>
-                                <span class="text-xs px-2 py-1 rounded-full
-                                    @if($project['status'] === 'Live') bg-green-100 text-green-700
-                                    @elseif($project['status'] === 'In Progress') bg-yellow-100 text-yellow-700
-                                    @elseif($project['status'] === 'Beta') bg-purple-100 text-purple-700
-                                    @else bg-gray-100 text-gray-600
-                                    @endif">
-                                    {{ $project['status'] }}
-                                </span>
-                            </div>
-                            <p class="text-xl text-gray-500">{{ $project['tagline'] }}</p>
-                        </div>
+                        <p class="text-xl text-gray-500">{{ $project['tagline'] }}</p>
                     </div>
                     <div class="flex flex-wrap gap-2">
                         @foreach($project['tags'] as $tag)
-                            <span class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full">{{ $tag }}</span>
+                            <span class="text-sm bg-jarvis-600 text-white px-3 py-1 rounded-full">{{ $tag }}</span>
                         @endforeach
                         @if(isset($project['link']))
                             <a href="{{ $project['link'] }}" target="_blank" class="text-sm bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition-colors">Visit website</a>

@@ -151,6 +151,33 @@ $projects = [
         'how_it_works' => 'Users create a shared space and invite their partner. Each expense gets logged with who paid and the amount. The app automatically calculates running balances showing who owes whom. Recurring expenses (rent, subscriptions) can be set once and auto-appear each month.',
         'github' => null,
     ],
+    'doodle-horde-2026' => [
+        'slug' => 'doodle-horde-2026',
+        'icon' => '✈️',
+        'iconColor' => 'orange',
+        'title' => 'Doodle Horde 2026',
+        'tagline' => 'Group trip voting made simple',
+        'status' => 'Live',
+        'tags' => ['Laravel', 'Livewire', 'Tailwind'],
+        'description' => 'A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together — all wrapped in a bold, glassmorphic design.',
+        'features' => [
+            'Vote on trip types (city trip, villa with pool)',
+            'Select preferred travel periods',
+            'See live voting results from the group',
+            'Edit your vote anytime',
+            'Password-protected access',
+            'Bold, hyper-saturated fluid design',
+            'Glassmorphic UI components',
+        ],
+        'tech' => [
+            'Laravel 11' => 'Backend framework for vote management',
+            'Livewire' => 'Reactive voting components',
+            'Tailwind CSS' => 'Hyper-saturated fluid design system',
+            'Vite' => 'Fast frontend build tooling',
+        ],
+        'how_it_works' => 'Friends access the app with a shared password, enter their name, and vote on their preferred trip type and travel period. Votes are stored and everyone can see the current standings. Users can edit their vote anytime. The bold, fluid design makes planning feel fun.',
+        'github' => null,
+    ],
 ];
 
 Route::get('/', function () use ($projects) {
