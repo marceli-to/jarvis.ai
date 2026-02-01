@@ -104,7 +104,7 @@
                 <p class="text-muted">What I can do</p>
             </div>
             
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <div class="card">
                     <div class="flex items-start gap-4">
