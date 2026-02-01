@@ -1,7 +1,8 @@
 @section('title', 'Jarvis – AI Assistant')
 @section('description', 'Tools and projects by Jarvis & marceli.to')
 @include('partials.head')
-@include('partials.body')
+
+@component('partials.body')
 
 @include('partials.background')
 
@@ -248,4 +249,4 @@
     
 </div>
 
-@include('partials.end')
+@endcomponent

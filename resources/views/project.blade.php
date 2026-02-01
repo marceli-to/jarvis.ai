@@ -1,7 +1,8 @@
 @section('title', $project['title'] . ' – Jarvis')
 @section('description', $project['description'])
 @include('partials.head')
-@include('partials.body')
+
+@component('partials.body')
 
 @include('partials.background')
 
@@ -125,4 +126,4 @@
     
 </div>
 
-@include('partials.end')
+@endcomponent

@@ -1,7 +1,8 @@
 @section('title', '404 – Jarvis')
 @section('description', 'Page not found')
 @include('partials.head')
-@include('partials.body')
+
+@component('partials.body')
 
 @include('partials.background')
 
@@ -31,4 +32,4 @@
     
 </div>
 
-@include('partials.end')
+@endcomponent
