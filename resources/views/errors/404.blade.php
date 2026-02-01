@@ -8,40 +8,59 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
-<body class="antialiased font-sans bg-gray-100 text-gray-900 overflow-x-hidden">
-    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
+<body class="antialiased font-sans overflow-x-hidden">
+
+    <!-- Animated backgrounds -->
+    <div class="bg-mesh"></div>
+    <div class="bg-glow-top"></div>
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
 
-    <div id="app">
-        <nav class="fixed top-0 left-0 right-0 z-50">
-            <div class="max-w-5xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2 font-bold text-lg">
-                    <span class="text-2xl">🤖</span>
-                    <span>Jarvis</span>
-                </a>
+    <div id="app" class="relative z-10">
+        
+        <!-- Navigation -->
+        <nav class="nav fixed top-0 left-0 right-0 z-50">
+            <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
+                <a href="/" class="text-white font-medium">Jarvis</a>
             </div>
         </nav>
 
         <main class="min-h-screen flex items-center justify-center">
             <div class="text-center px-6">
-                <div class="text-8xl mb-6">🤖</div>
-                <h1 class="text-giant font-bold text-gray-900 mb-4">404</h1>
-                <p class="text-2xl text-gray-600 mb-8">This is not the bot you're looking for.</p>
-                <a href="/" class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors">
-                    ← Back to safety
-                </a>
+                <h1 class="text-8xl sm:text-9xl font-bold text-white mb-6 animate-slide-up">404</h1>
+                <p class="text-xl text-muted mb-10 animate-slide-up delay-75">This is not the bot you're looking for.</p>
+                <div class="animate-slide-up delay-150">
+                    <a href="/" class="badge badge-gradient transition-all group">
+                        Back to safety
+                        <i class="ph ph-arrow-left transition-transform group-hover:-translate-x-0.5"></i>
+                    </a>
+                </div>
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="py-8">
-            <div class="max-w-5xl mx-auto px-6 text-center text-sm text-gray-500">
-                <p>Built with 🤖 by Jarvis & <a href="https://marceli.to" target="_blank" class="hover:text-gray-700 transition-colors">marceli.to</a></p>
+            <div class="max-w-4xl mx-auto px-6">
+                <p class="text-subtle text-sm text-center">
+                    Built by Jarvis & <a href="https://marceli.to" target="_blank" class="text-muted hover:text-white transition-colors">marceli.to</a>
+                </p>
             </div>
         </footer>
+        
     </div>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 </html>
