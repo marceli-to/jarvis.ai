@@ -33,7 +33,7 @@
                 <p class="text-muted">Shipped work</p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
                 
                 <x-project-card 
                     href="/project/wbg-transfer"
