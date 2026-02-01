@@ -1,14 +1,4 @@
-@section('title', 'Jarvis – AI Assistant')
-@section('description', 'Tools and projects by Jarvis & marceli.to')
-@include('partials.head')
-
-@component('partials.body')
-
-@include('partials.background')
-
-<div id="app" class="relative z-10">
-    
-    @include('partials.nav')
+<x-layout title="Jarvis – AI Assistant" description="Tools and projects by Jarvis & marceli.to">
 
     <!-- Hero -->
     <section class="min-h-[85vh] flex items-center py-20">
@@ -45,68 +35,61 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
                 
-                <a href="/project/wbg-transfer" class="card card-interactive animate-slide-up delay-0">
-                    <h3 class="text-white font-semibold text-xl mb-2">WBG File Transfer</h3>
-                    <p class="text-muted text-sm mb-4">Secure file sharing with expiring links</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">API</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/wbg-transfer"
+                    title="WBG File Transfer"
+                    description="Secure file sharing with expiring links"
+                    :tags="['Laravel', 'API']"
+                    delay="0"
+                />
                 
-                <a href="/project/egli-gress-hueppi" class="card card-interactive animate-slide-up delay-75">
-                    <h3 class="text-white font-semibold text-xl mb-2">Egli-Gress-Hüppi</h3>
-                    <p class="text-muted text-sm mb-4">Sports prediction game</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Livewire</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/egli-gress-hueppi"
+                    title="Egli-Gress-Hüppi"
+                    description="Sports prediction game"
+                    :tags="['Laravel', 'Livewire']"
+                    delay="75"
+                />
                 
-                <a href="/project/email-styler" class="card card-interactive animate-slide-up delay-150">
-                    <h3 class="text-white font-semibold text-xl mb-2">Email Styler</h3>
-                    <p class="text-muted text-sm mb-4">AI that writes like you</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Ollama</span>
-                        <span class="tag">RAG</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/email-styler"
+                    title="Email Styler"
+                    description="AI that writes like you"
+                    :tags="['Ollama', 'RAG']"
+                    delay="150"
+                />
                 
-                <a href="/project/miyu-cli" class="card card-interactive animate-slide-up delay-225">
-                    <h3 class="text-white font-semibold text-xl mb-2">Miyu CLI</h3>
-                    <p class="text-muted text-sm mb-4">Chat with local models</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">CLI</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/miyu-cli"
+                    title="Miyu CLI"
+                    description="Chat with local models"
+                    :tags="['Node.js', 'CLI']"
+                    delay="225"
+                />
                 
-                <a href="/project/kimiyu" class="card card-interactive animate-slide-up delay-300">
-                    <h3 class="text-white font-semibold text-xl mb-2">kimiyu</h3>
-                    <p class="text-muted text-sm mb-4">Expense splitting for couples</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Vue</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/kimiyu"
+                    title="kimiyu"
+                    description="Expense splitting for couples"
+                    :tags="['Laravel', 'Vue']"
+                    delay="300"
+                />
                 
-                <a href="/project/doodle-horde-2026" class="card card-interactive animate-slide-up delay-375">
-                    <h3 class="text-white font-semibold text-xl mb-2">Doodle Horde</h3>
-                    <p class="text-muted text-sm mb-4">Group trip planning</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Livewire</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/doodle-horde-2026"
+                    title="Doodle Horde"
+                    description="Group trip planning"
+                    :tags="['Laravel', 'Livewire']"
+                    delay="375"
+                />
                 
-                <a href="/project/aicms" class="card card-interactive animate-slide-up delay-450">
-                    <h3 class="text-white font-semibold text-xl mb-2">AI CMS</h3>
-                    <p class="text-muted text-sm mb-4">Edit content via chat</p>
-                    <div class="flex gap-1.5">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Claude</span>
-                    </div>
-                </a>
+                <x-project-card 
+                    href="/project/aicms"
+                    title="AI CMS"
+                    description="Edit content via chat"
+                    :tags="['Laravel', 'Claude']"
+                    delay="450"
+                />
                 
             </div>
         </div>
@@ -245,8 +228,4 @@
         </div>
     </section>
 
-    @include('partials.footer')
-    
-</div>
-
-@endcomponent
+</x-layout>

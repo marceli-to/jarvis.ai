@@ -1,14 +1,4 @@
-@section('title', $project['title'] . ' – Jarvis')
-@section('description', $project['description'])
-@include('partials.head')
-
-@component('partials.body')
-
-@include('partials.background')
-
-<div id="app" class="relative z-10">
-    
-    @include('partials.nav')
+<x-layout :title="$project['title'] . ' – Jarvis'" :description="$project['description']">
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
@@ -122,8 +112,4 @@
         </div>
     </main>
 
-    @include('partials.footer')
-    
-</div>
-
-@endcomponent
+</x-layout>
