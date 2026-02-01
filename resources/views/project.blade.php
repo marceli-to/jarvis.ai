@@ -7,93 +7,138 @@
     <meta name="description" content="{{ $project['description'] }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="antialiased font-sans bg-gray-100 text-gray-900 overflow-x-hidden">
-    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
+<body class="antialiased font-sans overflow-x-hidden">
+
+    <!-- Animated backgrounds -->
+    <div class="bg-mesh"></div>
+    <div class="bg-glow-top"></div>
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
 
-    <div id="app">
-        <nav class="sticky top-0 left-0 right-0 z-50">
-            <div class="max-w-5xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2 font-bold text-lg">
-                    <span class="text-2xl">🤖</span>
-                    <span>Jarvis</span>
-                </a>
-                <div class="flex items-center gap-6">
-                    <a href="/#projects" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
-                    <a href="/#tools" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Tools</a>
-                    <a href="/#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About</a>
+    <div id="app" class="relative z-10">
+        
+        <!-- Navigation -->
+        <nav class="nav sticky top-0 z-50">
+            <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
+                <a href="/" class="text-white ">Jarvis</a>
+                <div class="flex items-center gap-1">
+                    <a href="/#projects" class="nav-link">Projects</a>
+                    <a href="/#tools" class="nav-link">Tools</a>
+                    <a href="/#about" class="nav-link">About</a>
                 </div>
             </div>
         </nav>
 
         <main class="py-16">
             <div class="max-w-4xl mx-auto px-6">
-                <!-- Back link -->
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-8">
-                    ← Back to projects
-                </a>
+                
+                <!-- Top bar -->
+                <div class="mb-12">
+                    <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
+                        <i class="ph ph-arrow-left"></i>
+                        Back to projects
+                    </a>
+                </div>
 
                 <!-- Header -->
-                <div class="mb-12">
-                    <div class="mb-6">
-                        <div class="flex items-center gap-3 mb-2">
-                            <h1 class="text-4xl font-bold">{{ $project['title'] }}</h1>
-                            <span class="text-xs px-2 py-1 rounded-full
-                                @if($project['status'] === 'Live') bg-green-100 text-green-700
-                                @elseif($project['status'] === 'In Progress') bg-yellow-100 text-yellow-700
-                                @elseif($project['status'] === 'Beta') bg-purple-100 text-purple-700
-                                @else bg-gray-100 text-gray-600
+                <div class="mb-16 animate-slide-up">
+                    <div class="mb-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h1 class="heading-lg">{{ $project['title'] }}</h1>
+                            <span class="badge
+                                @if($project['status'] === 'Live') badge-success
+                                @elseif($project['status'] === 'Beta') text-purple-400
+                                @else text-gray-400
                                 @endif">
+                                @if($project['status'] === 'Live')
+                                    <span class="status-dot status-dot-online"></span>
+                                @endif
                                 {{ $project['status'] }}
                             </span>
                         </div>
-                        <p class="text-xl text-gray-500">{{ $project['tagline'] }}</p>
+                        <p class="text-xl text-muted">{{ $project['tagline'] }}</p>
                     </div>
                     <div class="flex flex-wrap gap-2">
                         @foreach($project['tags'] as $tag)
-                            <span class="text-sm bg-jarvis-600 text-white px-3 py-1 rounded-full">{{ $tag }}</span>
+                            <span class="tag">{{ $tag }}</span>
                         @endforeach
-                        @if(isset($project['link']))
-                            <a href="{{ $project['link'] }}" target="_blank" class="text-sm bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition-colors">Visit website</a>
-                        @endif
-                        @if(isset($project['github']) && $project['github'])
-                            <a href="{{ $project['github'] }}" target="_blank" class="text-sm bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition-colors">Open GitHub</a>
-                        @endif
                     </div>
                 </div>
 
                 <!-- Description -->
-                <div class="mb-12">
-                    <p class="text-2xl text-gray-600 leading-snug font-medium">{{ $project['description'] }}</p>
+                <div class="mb-16 animate-slide-up delay-75">
+                    <p class="text-2xl text-muted leading-relaxed mb-8">{{ $project['description'] }}</p>
+                    <div class="flex items-center gap-3">
+                        @if(isset($project['link']))
+                            <a href="{{ $project['link'] }}" target="_blank" class="badge badge-gradient transition-all group">
+                                Visit website
+                                <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5"></i>
+                            </a>
+                        @endif
+                        @if(isset($project['github']) && $project['github'])
+                            <a href="{{ $project['github'] }}" target="_blank" class="badge badge-gradient transition-all">
+                                <i class="ph ph-github-logo"></i>
+                                GitHub
+                            </a>
+                        @endif
+                    </div>
                 </div>
 
                 <!-- Features -->
-                <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6">Features</h2>
+                <div class="card mb-12 animate-slide-up delay-150">
+                    <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
-                        @foreach($project['features'] as $feature)
+                        @if(isset($project['features']) && is_array($project['features']))
+                            @foreach($project['features'] as $feature)
+                                <li class="flex items-start gap-3">
+                                    <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                                    <span class="text-muted">{{ $feature }}</span>
+                                </li>
+                            @endforeach
+                        @else
                             <li class="flex items-start gap-3">
-                                <span class="text-jarvis-500 mt-1">✓</span>
-                                <span class="text-gray-700">{{ $feature }}</span>
+                                <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                                <span class="text-muted">Feature details coming soon</span>
                             </li>
-                        @endforeach
+                        @endif
                     </ul>
                 </div>
 
                 @if(isset($project['commands']))
                 <!-- Commands -->
-                <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6">Commands</h2>
-                    <div class="space-y-3">
+                <div class="card mb-12 animate-slide-up delay-225">
+                    <h2 class="text-xl font-semibold text-white mb-6">Commands</h2>
+                    <div class="space-y-4">
                         @foreach($project['commands'] as $cmd => $desc)
                             <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                                <code class="text-jarvis-700 font-mono text-sm bg-jarvis-50 px-2 py-1 rounded shrink-0">{{ $cmd }}</code>
-                                <span class="text-gray-500 text-sm">{{ $desc }}</span>
+                                <code class="text-emerald-400 font-mono text-sm bg-white/5 px-2 py-1 rounded shrink-0">{{ $cmd }}</code>
+                                <span class="text-subtle text-sm">{{ $desc }}</span>
                             </div>
                         @endforeach
                     </div>
@@ -101,31 +146,36 @@
                 @endif
 
                 <!-- How it works -->
-                <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6">How It Works</h2>
-                    <p class="text-gray-700 leading-relaxed">{{ $project['how_it_works'] }}</p>
+                <div class="card mb-12 animate-slide-up delay-300">
+                    <h2 class="text-xl font-semibold text-white mb-6">How It Works</h2>
+                    <p class="text-muted leading-relaxed">{{ $project['how_it_works'] }}</p>
                 </div>
 
                 <!-- Tech Stack -->
-                <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6">Tech Stack</h2>
+                <div class="card mb-12 animate-slide-up delay-375">
+                    <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
                     <div class="grid sm:grid-cols-2 gap-4">
                         @foreach($project['tech'] as $name => $desc)
-                            <div class="bg-white/50 rounded-xl p-4">
-                                <h3 class="font-semibold text-gray-900 mb-1">{{ $name }}</h3>
-                                <p class="text-sm text-gray-500">{{ $desc }}</p>
+                            <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
+                                <h3 class=" text-white mb-1">{{ $name }}</h3>
+                                <p class="text-sm text-subtle">{{ $desc }}</p>
                             </div>
                         @endforeach
                     </div>
                 </div>
+                
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="py-8">
-            <div class="max-w-5xl mx-auto px-6 text-center text-sm text-gray-500">
-                <p>Built with 🤖 by Jarvis & <a href="https://marceli.to" target="_blank" class="hover:text-gray-700 transition-colors">marceli.to</a></p>
+            <div class="max-w-4xl mx-auto px-6">
+                <p class="text-subtle text-sm text-center">
+                    Built by Jarvis & <a href="https://marceli.to" target="_blank" class="text-muted hover:text-white transition-colors">marceli.to</a>
+                </p>
             </div>
         </footer>
+        
     </div>
 </body>
 </html>

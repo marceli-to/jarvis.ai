@@ -2101,12 +2101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/marceli-to/aicms.git",
-                "reference": "96578a12654a854a7df1986358ebc5f8047d1042"
+                "reference": "ec16c805b39baab9048e29e000caf9f3991d0c71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marceli-to/aicms/zipball/96578a12654a854a7df1986358ebc5f8047d1042",
-                "reference": "96578a12654a854a7df1986358ebc5f8047d1042",
+                "url": "https://api.github.com/repos/marceli-to/aicms/zipball/ec16c805b39baab9048e29e000caf9f3991d0c71",
+                "reference": "ec16c805b39baab9048e29e000caf9f3991d0c71",
                 "shasum": ""
             },
             "require": {
@@ -2143,7 +2143,7 @@
                 "issues": "https://github.com/marceli-to/aicms/issues",
                 "source": "https://github.com/marceli-to/aicms/tree/main"
             },
-            "time": "2026-02-01T12:03:46+00:00"
+            "time": "2026-02-01T15:38:59+00:00"
         },
         {
             "name": "monolog/monolog",

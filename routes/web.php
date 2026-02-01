@@ -186,7 +186,6 @@ $projects = [
         'tagline' => 'Edit your website with natural language',
         'status' => 'Live',
         'tags' => ['Laravel', 'Livewire', 'Claude API'],
-        'link' => 'https://github.com/marceli-to/aicms',
         'description' => 'A Laravel package that adds an AI-powered content editor to any site. No admin panel needed — just chat with Claude to edit text, and it updates your files directly. Change history with undo, beautiful glassmorphic UI.',
         'features' => [
             'Natural language content editing',
