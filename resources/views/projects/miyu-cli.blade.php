@@ -106,11 +106,17 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Node.js</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/nodedotjs/white" alt="Node.js" class="w-6 h-6">
+                                Node.js
+                            </h3>
                             <p class="text-sm text-subtle">JavaScript runtime for the CLI</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Ollama</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/ollama/white" alt="Ollama" class="w-6 h-6">
+                                Ollama
+                            </h3>
                             <p class="text-sm text-subtle">Local LLM inference engine</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">

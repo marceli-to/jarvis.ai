@@ -100,10 +100,40 @@
                 <!-- Tech Stack -->
                 <div class="animate-slide-up delay-375">
                     <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
+                    @php
+                        $techIcons = [
+                            'laravel' => 'laravel',
+                            'livewire' => 'livewire',
+                            'mysql' => 'mysql',
+                            'tailwind' => 'tailwindcss',
+                            'vue' => 'vuedotjs',
+                            'node' => 'nodedotjs',
+                            'vite' => 'vite',
+                            'claude' => 'anthropic',
+                            'anthropic' => 'anthropic',
+                            'ollama' => 'ollama',
+                            'sqlite' => 'sqlite',
+                        ];
+                    @endphp
                     <div class="grid sm:grid-cols-2 gap-4">
                         @foreach($project['tech'] as $name => $desc)
+                            @php
+                                $icon = null;
+                                $nameLower = strtolower($name);
+                                foreach ($techIcons as $key => $slug) {
+                                    if (str_contains($nameLower, $key)) {
+                                        $icon = $slug;
+                                        break;
+                                    }
+                                }
+                            @endphp
                             <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                                <h3 class="text-white mb-1">{{ $name }}</h3>
+                                <h3 class="text-white mb-1 @if($icon) flex items-center gap-2 @endif">
+                                    @if($icon)
+                                        <img src="https://cdn.simpleicons.org/{{ $icon }}/white" alt="{{ $name }}" class="w-6 h-6">
+                                    @endif
+                                    {{ $name }}
+                                </h3>
                                 <p class="text-sm text-subtle">{{ $desc }}</p>
                             </div>
                         @endforeach

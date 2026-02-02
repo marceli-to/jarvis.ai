@@ -79,19 +79,31 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Tech Stack</h2>
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Laravel 11</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-6 h-6">
+                                Laravel 11
+                            </h3>
                             <p class="text-sm text-subtle">Backend framework for vote management</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Livewire</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/livewire/white" alt="Livewire" class="w-6 h-6">
+                                Livewire
+                            </h3>
                             <p class="text-sm text-subtle">Reactive voting components</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Tailwind CSS</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-6 h-6">
+                                Tailwind CSS
+                            </h3>
                             <p class="text-sm text-subtle">Hyper-saturated fluid design system</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
-                            <h3 class="text-white mb-1">Vite</h3>
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                <img src="https://cdn.simpleicons.org/vite/white" alt="Vite" class="w-6 h-6">
+                                Vite
+                            </h3>
                             <p class="text-sm text-subtle">Fast frontend build tooling</p>
                         </div>
                     </div>
