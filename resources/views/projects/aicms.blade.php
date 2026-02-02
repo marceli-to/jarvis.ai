@@ -103,28 +103,28 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-4 h-4">
+                                <img src="/icons/tech/laravel.svg" alt="Laravel" class="w-4 h-4">
                                 Laravel 12
                             </h3>
                             <p class="text-sm text-subtle">Package built for the latest Laravel</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/livewire/white" alt="Livewire" class="w-4 h-4">
+                                <img src="/icons/tech/livewire.svg" alt="Livewire" class="w-4 h-4">
                                 Livewire 3
                             </h3>
                             <p class="text-sm text-subtle">Reactive chat interface</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/anthropic/white" alt="Claude" class="w-4 h-4">
+                                <img src="/icons/tech/anthropic.svg" alt="Claude" class="w-4 h-4">
                                 Claude API
                             </h3>
                             <p class="text-sm text-subtle">Anthropic's AI for natural language understanding</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-4 h-4">
+                                <img src="/icons/tech/tailwindcss.svg" alt="Tailwind CSS" class="w-4 h-4">
                                 Tailwind CSS
                             </h3>
                             <p class="text-sm text-subtle">Beautiful glassmorphic design</p>
