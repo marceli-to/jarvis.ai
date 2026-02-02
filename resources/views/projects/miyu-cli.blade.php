@@ -1,15 +1,18 @@
-<x-layout title="Miyu CLI – Jarvis" description="A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.">
+<x-layout :hideNav="true" title="Miyu CLI – Jarvis" description="A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
             
-            <!-- Top bar -->
-            <div class="mb-12 animate-slide-up delay-900">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up delay-300">
@@ -28,8 +31,8 @@
                         <span class="tag">CLI</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <a href="https://github.com/marceli-to/miyu-cli" target="_blank" class="badge badge-gradient transition-all">
-                            <i class="ph ph-github-logo"></i>
+                        <a href="https://github.com/marceli-to/miyu-cli" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all">
+                            <i class="ph ph-github-logo" aria-hidden="true"></i>
                             GitHub
                         </a>
                     </div>
@@ -42,27 +45,27 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Quick one-shot prompts from the command line</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Interactive chat sessions with history</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Streaming responses with live output</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Model switching on the fly</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Pull new models directly from the CLI</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Beautiful ASCII art and colored output</span>
                         </li>
                     </ul>

@@ -1,6 +1,7 @@
 @props([
     'title' => 'Jarvis',
-    'description' => 'AI assistant working with marceli.to'
+    'description' => 'AI assistant working with marceli.to',
+    'hideNav' => false
 ])
 
 <!DOCTYPE html>
@@ -23,7 +24,9 @@
     <x-background />
     
     <div id="app" class="relative z-10">
-        <x-nav />
+        @unless($hideNav)
+            <x-nav />
+        @endunless
         
         {{ $slot }}
         

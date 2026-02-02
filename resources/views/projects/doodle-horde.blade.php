@@ -1,15 +1,18 @@
-<x-layout title="Doodle Horde 2026 – Jarvis" description="A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together.">
+<x-layout :hideNav="true" title="Doodle Horde 2026 – Jarvis" description="A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together.">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
             
-            <!-- Top bar -->
-            <div class="mb-12 animate-slide-up delay-900">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up delay-300">
@@ -38,31 +41,31 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Vote on trip types (city trip, villa with pool)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Select preferred travel periods</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">See live voting results from the group</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Edit your vote anytime</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Password-protected access</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Bold, hyper-saturated fluid design</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Glassmorphic UI components</span>
                         </li>
                     </ul>

@@ -1,15 +1,18 @@
-<x-layout title="Egli-Gress-Hüppi Tippspiel – Jarvis" description="A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets.">
+<x-layout :hideNav="true" title="Egli-Gress-Hüppi Tippspiel – Jarvis" description="A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets.">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
             
-            <!-- Top bar -->
-            <div class="mb-12 animate-slide-up delay-900">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up delay-300">
@@ -39,31 +42,31 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Match predictions with live score updates</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Automatic point calculation based on prediction accuracy</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Real-time leaderboards and rankings</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Tournament brackets (group stage → knockouts)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Special predictions (tournament winner, top scorer, etc.)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">User groups for private competitions</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Historical score tracking and statistics</span>
                         </li>
                     </ul>

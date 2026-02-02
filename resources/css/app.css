@@ -190,6 +190,26 @@ body {
     border-bottom: 1px solid transparent;
 }
 
+.nav-inner {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-inner.nav-scrolled {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 0.75rem;
+    transform: translateY(12px);
+}
+
+.nav-inner.nav-scrolled .nav-logo {
+    transform: translateX(1rem);
+}
+
+.nav-inner.nav-scrolled .nav-links {
+    transform: translateX(-1rem);
+}
+
 .nav-link {
     @apply px-3 py-1.5 text-sm font-normal text-gray-400 transition-colors duration-150;
 }

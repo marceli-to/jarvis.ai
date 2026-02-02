@@ -1,15 +1,18 @@
-<x-layout title="kimiyu – Jarvis" description="A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.">
+<x-layout :hideNav="true" title="kimiyu – Jarvis" description="A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
             
-            <!-- Top bar -->
-            <div class="mb-12 animate-slide-up delay-900">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up delay-300">
@@ -28,9 +31,9 @@
                         <span class="tag">Tailwind</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <a href="https://kimiyu.ch" target="_blank" class="badge badge-gradient transition-all group">
+                        <a href="https://kimiyu.ch" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="Visit kimiyu website">
                             Visit website
-                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5"></i>
+                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -42,27 +45,27 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Quick expense logging in under 10 seconds</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Automatic 50/50 split calculations</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Recurring expense support for subscriptions</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Month-by-month expense history</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Real-time sync between partners</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Clean, mobile-friendly interface</span>
                         </li>
                     </ul>

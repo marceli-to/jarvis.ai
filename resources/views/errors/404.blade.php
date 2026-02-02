@@ -6,7 +6,7 @@
             <p class="text-xl text-muted mb-10 animate-slide-up delay-75">This is not the bot you're looking for.</p>
             <div class="animate-slide-up delay-150">
                 <a href="/" class="badge badge-gradient transition-all group">
-                    <i class="ph ph-arrow-left transition-transform group-hover:-translate-x-0.5"></i>
+                    <i class="ph ph-arrow-left transition-transform group-hover:-translate-x-0.5" aria-hidden="true"></i>
                     Back to safety
                 </a>
             </div>

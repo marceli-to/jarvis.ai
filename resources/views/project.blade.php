@@ -1,15 +1,17 @@
-<x-layout :title="$project['title'] . ' – Jarvis'" :description="$project['description']">
+<x-layout :title="$project['title'] . ' – Jarvis'" :description="$project['description']" :hideNav="true">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
-            
-            <!-- Top bar -->
-            <div class="mb-12">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up">
@@ -41,14 +43,14 @@
                 <p class="text-2xl text-muted leading-relaxed mb-8">{{ $project['description'] }}</p>
                 <div class="flex items-center gap-3">
                     @if(isset($project['link']))
-                        <a href="{{ $project['link'] }}" target="_blank" class="badge badge-gradient transition-all group">
+                        <a href="{{ $project['link'] }}" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="Visit {{ $project['title'] }} website">
                             Visit website
-                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5"></i>
+                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5" aria-hidden="true"></i>
                         </a>
                     @endif
                     @if(isset($project['github']) && $project['github'])
-                        <a href="{{ $project['github'] }}" target="_blank" class="badge badge-gradient transition-all">
-                            <i class="ph ph-github-logo"></i>
+                        <a href="{{ $project['github'] }}" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all" aria-label="View {{ $project['title'] }} on GitHub">
+                            <i class="ph ph-github-logo" aria-hidden="true"></i>
                             GitHub
                         </a>
                     @endif
@@ -63,13 +65,13 @@
                         @if(isset($project['features']) && is_array($project['features']))
                             @foreach($project['features'] as $feature)
                                 <li class="flex items-start gap-3">
-                                    <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                                    <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                                     <span class="text-muted">{{ $feature }}</span>
                                 </li>
                             @endforeach
                         @else
                             <li class="flex items-start gap-3">
-                                <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                                <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                                 <span class="text-muted">Feature details coming soon</span>
                             </li>
                         @endif

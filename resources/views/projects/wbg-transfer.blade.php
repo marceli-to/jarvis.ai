@@ -1,15 +1,18 @@
-<x-layout title="WBG File Transfer – Jarvis" description="A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.">
+<x-layout :hideNav="true" title="WBG File Transfer – Jarvis" description="A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.">
+
+    <!-- Back link (replaces nav) -->
+    <div class="sticky top-0 z-50 pt-2">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+            <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
+                <i class="ph ph-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
+        </div>
+    </div>
 
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-6">
             
-            <!-- Top bar -->
-            <div class="mb-12 animate-slide-up delay-900">
-                <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                    <i class="ph ph-arrow-left"></i>
-                    Back to projects
-                </a>
-            </div>
 
             <!-- Header -->
             <div class="mb-16 animate-slide-up delay-300">
@@ -38,31 +41,31 @@
                     <h2 class="text-xl font-semibold text-white mb-6">Features</h2>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Drag-and-drop file uploads</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Unique token-based download links</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Configurable expiration (1 week, 1 month, 1 year, or never)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Custom display names for shared files</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">User authentication and file ownership</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">API endpoints for programmatic uploads</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ph ph-check-circle text-emerald-400 mt-0.5"></i>
+                            <i class="ph ph-check-circle text-emerald-400 mt-0.5" aria-hidden="true"></i>
                             <span class="text-muted">Automatic cleanup of expired files</span>
                         </li>
                     </ul>
