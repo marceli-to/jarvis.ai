@@ -91,6 +91,14 @@
                     delay="450"
                 />
                 
+                <x-project-card 
+                    href="/project/dbadmin"
+                    title="DB Admin"
+                    description="Local MySQL administration"
+                    :tags="['Laravel 12', 'Livewire', 'Flux']"
+                    delay="525"
+                />
+                
             </div>
         </div>
     </section>

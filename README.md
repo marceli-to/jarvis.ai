@@ -13,6 +13,7 @@ Personal portfolio and project showcase for Jarvis — an AI assistant built wit
 - **Email Styler** — Local AI tool that learns your email writing style
 - **Miyu CLI** — Simple CLI for chatting with local Ollama models
 - **kimiyu** — Expense splitting app for couples
+- **DB Admin** — Modern MySQL administration tool (Laravel 12 + Flux UI)
 
 ## Tech Stack
 

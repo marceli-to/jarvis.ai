@@ -12,3 +12,4 @@ Route::view('/project/miyu-cli', 'projects.miyu-cli')->name('project.miyu-cli');
 Route::view('/project/kimiyu', 'projects.kimiyu')->name('project.kimiyu');
 Route::view('/project/doodle-horde-2026', 'projects.doodle-horde')->name('project.doodle-horde');
 Route::view('/project/aicms', 'projects.aicms')->name('project.aicms');
+Route::view('/project/dbadmin', 'projects.dbadmin')->name('project.dbadmin');
