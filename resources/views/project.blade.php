@@ -130,7 +130,7 @@
                             <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                                 <h3 class="text-white mb-1 @if($icon) flex items-center gap-2 @endif">
                                     @if($icon)
-                                        <img src="https://cdn.simpleicons.org/{{ $icon }}/white" alt="{{ $name }}" class="w-6 h-6">
+                                        <img src="https://cdn.simpleicons.org/{{ $icon }}/white" alt="{{ $name }}" class="w-4 h-4">
                                     @endif
                                     {{ $name }}
                                 </h3>

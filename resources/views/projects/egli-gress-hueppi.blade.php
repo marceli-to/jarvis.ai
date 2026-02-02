@@ -81,35 +81,35 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-4 h-4">
                                 Laravel 11
                             </h3>
                             <p class="text-sm text-subtle">Modern PHP framework replacing legacy Java backend</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/livewire/white" alt="Livewire" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/livewire/white" alt="Livewire" class="w-4 h-4">
                                 Livewire
                             </h3>
                             <p class="text-sm text-subtle">Reactive UI components without heavy JavaScript</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-4 h-4">
                                 Tailwind CSS
                             </h3>
                             <p class="text-sm text-subtle">Utility-first styling for the new interface</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" class="w-4 h-4">
                                 MySQL
                             </h3>
                             <p class="text-sm text-subtle">Database migrated from the original schema</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/vite/white" alt="Vite" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/vite/white" alt="Vite" class="w-4 h-4">
                                 Vite
                             </h3>
                             <p class="text-sm text-subtle">Fast frontend build tooling</p>

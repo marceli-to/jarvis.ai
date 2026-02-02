@@ -80,35 +80,35 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/laravel/white" alt="Laravel" class="w-4 h-4">
                                 Laravel 12
                             </h3>
                             <p class="text-sm text-subtle">PHP framework for the backend API</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/vuedotjs/white" alt="Vue.js" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/vuedotjs/white" alt="Vue.js" class="w-4 h-4">
                                 Vue.js 3
                             </h3>
                             <p class="text-sm text-subtle">Reactive frontend components</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind CSS" class="w-4 h-4">
                                 Tailwind CSS 4
                             </h3>
                             <p class="text-sm text-subtle">Utility-first styling</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" class="w-4 h-4">
                                 SQLite/MySQL
                             </h3>
                             <p class="text-sm text-subtle">Database for expense storage</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/vite/white" alt="Vite" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/vite/white" alt="Vite" class="w-4 h-4">
                                 Vite
                             </h3>
                             <p class="text-sm text-subtle">Fast frontend build tooling</p>

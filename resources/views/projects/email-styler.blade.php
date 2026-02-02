@@ -100,7 +100,7 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/ollama/white" alt="Ollama" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/ollama/white" alt="Ollama" class="w-4 h-4">
                                 Ollama
                             </h3>
                             <p class="text-sm text-subtle">Local LLM inference with Llama 3.1 8B</p>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="https://cdn.simpleicons.org/nodedotjs/white" alt="Node.js" class="w-6 h-6">
+                                <img src="https://cdn.simpleicons.org/nodedotjs/white" alt="Node.js" class="w-4 h-4">
                                 Node.js
                             </h3>
                             <p class="text-sm text-subtle">CLI tool and processing logic</p>
