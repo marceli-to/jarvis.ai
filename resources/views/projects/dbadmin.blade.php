@@ -2,10 +2,14 @@
 
     <!-- Back link (replaces nav) -->
     <div class="sticky top-0 z-50 pt-2">
-        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
             <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
                 <i class="ph ph-arrow-left" aria-hidden="true"></i>
                 Back to projects
+            </a>
+            <a href="https://github.com/marceli-to/dbadmin" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="View DB Admin on GitHub">
+                <i class="ph ph-github-logo" aria-hidden="true"></i>
+                GitHub
             </a>
         </div>
     </div>
@@ -23,20 +27,12 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A lightweight, modern MySQL database administration tool. Browse databases, manage tables, edit data, and run SQL queries — all in a clean Flux UI interface. Built as a local alternative to phpMyAdmin.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Laravel 12</span>
-                        <span class="tag">Livewire 4</span>
-                        <span class="tag">Flux UI</span>
-                        <span class="tag">Tailwind 4</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <a href="https://github.com/marceli-to/dbadmin" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group">
-                            View on GitHub
-                            <i class="ph ph-github-logo transition-transform group-hover:translate-x-0.5" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A lightweight, modern MySQL database administration tool. Browse databases, manage tables, edit data, and run SQL queries — all in a clean Flux UI interface. Built as a local alternative to phpMyAdmin.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Laravel 12</span>
+                    <span class="tag">Livewire 4</span>
+                    <span class="tag">Flux UI</span>
+                    <span class="tag">Tailwind 4</span>
                 </div>
             </div>
 

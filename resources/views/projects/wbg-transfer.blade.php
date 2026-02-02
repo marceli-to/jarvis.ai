@@ -23,15 +23,11 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">File Upload</span>
-                        <span class="tag">API</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A simple, secure file transfer tool built for WBG. Upload files, get shareable links with configurable expiration, and manage transfers through a clean dashboard.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">File Upload</span>
+                    <span class="tag">API</span>
                 </div>
             </div>
 

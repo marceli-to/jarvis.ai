@@ -23,15 +23,11 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together — all wrapped in a bold, glassmorphic design.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Livewire</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A Doodle-style voting app for planning group trips. Vote on trip types and travel periods, see what everyone prefers, and make decisions together — all wrapped in a bold, glassmorphic design.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Livewire</span>
+                    <span class="tag">Tailwind</span>
                 </div>
             </div>
 

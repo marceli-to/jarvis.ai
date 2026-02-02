@@ -23,16 +23,12 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets. Ported from a complex Java/Keycloak stack to a clean Laravel application.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Livewire</span>
-                        <span class="tag">Tailwind</span>
-                        <span class="tag">Java Migration</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A complete rewrite of a legacy Java sports prediction game. Users compete by predicting match outcomes, with live scoring, leaderboards, and tournament brackets. Ported from a complex Java/Keycloak stack to a clean Laravel application.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Livewire</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Java Migration</span>
                 </div>
             </div>
 

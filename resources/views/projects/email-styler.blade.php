@@ -23,16 +23,12 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A local AI tool that learns your email writing style and helps you write new emails that sound exactly like you. 100% local — uses Ollama for generation, no data leaves your machine.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Ollama</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">RAG</span>
-                        <span class="tag">CLI</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A local AI tool that learns your email writing style and helps you write new emails that sound exactly like you. 100% local — uses Ollama for generation, no data leaves your machine.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Ollama</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">CLI</span>
                 </div>
             </div>
 

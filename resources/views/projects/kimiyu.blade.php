@@ -2,10 +2,14 @@
 
     <!-- Back link (replaces nav) -->
     <div class="sticky top-0 z-50 pt-2">
-        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
             <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
                 <i class="ph ph-arrow-left" aria-hidden="true"></i>
                 Back to projects
+            </a>
+            <a href="https://kimiyu.ch" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="Visit kimiyu website">
+                Visit website
+                <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5" aria-hidden="true"></i>
             </a>
         </div>
     </div>
@@ -23,19 +27,11 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Vue</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <a href="https://kimiyu.ch" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="Visit kimiyu website">
-                            Visit website
-                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-0.5" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A simple expense splitting app designed for couples and housemates. Track shared costs, see who owes what, and settle up without spreadsheets or awkward math.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Vue</span>
+                    <span class="tag">Tailwind</span>
                 </div>
             </div>
 

@@ -2,10 +2,14 @@
 
     <!-- Back link (replaces nav) -->
     <div class="sticky top-0 z-50 pt-2">
-        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center">
+        <div class="max-w-4xl mx-auto px-6 h-[var(--header-height)] flex items-center justify-between">
             <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors" aria-label="Back to projects list">
                 <i class="ph ph-arrow-left" aria-hidden="true"></i>
                 Back to projects
+            </a>
+            <a href="https://github.com/marceli-to/miyu-cli" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all group" aria-label="View Miyu CLI on GitHub">
+                <i class="ph ph-github-logo" aria-hidden="true"></i>
+                GitHub
             </a>
         </div>
     </div>
@@ -23,19 +27,11 @@
                         Live
                     </span>
                 </div>
-                <p class="text-xl text-muted leading-relaxed mb-8">A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.</p>
-                <div class="flex items-center justify-between gap-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Ollama</span>
-                        <span class="tag">CLI</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <a href="https://github.com/marceli-to/miyu-cli" target="_blank" rel="noopener noreferrer" class="badge badge-gradient transition-all">
-                            <i class="ph ph-github-logo" aria-hidden="true"></i>
-                            GitHub
-                        </a>
-                    </div>
+                <p class="text-xl text-muted leading-relaxed mb-4">A simple, stylish CLI for chatting with local Ollama models. Quick prompts, interactive chat, streaming responses — all in your terminal.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Ollama</span>
+                    <span class="tag">CLI</span>
                 </div>
             </div>
 
