@@ -67,6 +67,32 @@
                     </ul>
                 </div>
 
+                <!-- Screenshot -->
+                <div class="animate-slide-up delay-650">
+                    <div class="relative group">
+                        <div class="relative overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.02] p-2">
+                            <div class="relative rounded-lg overflow-hidden">
+                                <img 
+                                    src="/images/projects/miyu-cli-screenshot.jpg" 
+                                    alt="Miyu CLI in action" 
+                                    class="w-full h-auto transition-opacity duration-300 group-hover:opacity-0"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gray-950/50 pointer-events-none transition-opacity duration-300 group-hover:opacity-0"></div>
+                                <div class="absolute inset-0 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="text-center max-w-lg">
+                                        <p class="text-white/90 text-lg leading-relaxed mb-8">Das Aeschlimann Corti-Stipendium ist ein renommiertes Förderstipendium für bildende Künstler:innen mit Bezug zum Kanton Bern. Seit 1942 werden jährlich Haupt- und Förderstipendien an junge, vielversprechende Künstler:innen vergeben.</p>
+                                        <a href="https://ac-stipendium.ch" target="_blank" rel="noopener noreferrer" class="group/btn inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500 text-emerald-400 hover:bg-emerald-500/15 transition-all">
+                                            ac-stipendium.ch
+                                            <i class="ph ph-arrow-right transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Commands -->
                 <div class="animate-slide-up delay-700">
                     <h2 class="text-xl font-semibold text-white mb-6">Commands</h2>

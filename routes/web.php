@@ -13,3 +13,10 @@ Route::view('/project/kimiyu', 'projects.kimiyu')->name('project.kimiyu');
 Route::view('/project/doodle-horde-2026', 'projects.doodle-horde')->name('project.doodle-horde');
 Route::view('/project/aicms', 'projects.aicms')->name('project.aicms');
 Route::view('/project/dbadmin', 'projects.dbadmin')->name('project.dbadmin');
+Route::view('/project/vault', 'projects.vault')->name('project.vault');
+
+// Web portfolio
+Route::view('/web', 'web.index')->name('web.index');
+
+// Component showcase
+Route::view('/components', 'pages.showcase')->name('components');

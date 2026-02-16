@@ -98,6 +98,14 @@
                     :tags="['Laravel 12', 'Livewire', 'Flux']"
                     delay="525"
                 />
+
+                <x-project-card 
+                    href="/project/vault"
+                    title="Vault"
+                    description="Personal second brain & task manager"
+                    :tags="['Laravel', 'Vue 3', 'API']"
+                    delay="600"
+                />
                 
             </div>
         </div>
