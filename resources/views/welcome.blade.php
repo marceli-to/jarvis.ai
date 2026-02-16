@@ -103,7 +103,7 @@
                     href="/project/vault"
                     title="Vault"
                     description="Personal second brain & task manager"
-                    :tags="['Laravel', 'Vue 3', 'API']"
+                    :tags="['Laravel', 'Vue 3', 'Inertia']"
                     delay="600"
                 />
                 

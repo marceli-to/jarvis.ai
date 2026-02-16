@@ -90,10 +90,16 @@
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
-                                <img src="/icons/tech/vue.svg" alt="Vue 3" class="w-4 h-4">
+                                <img src="/icons/tech/vuedotjs.svg" alt="Vue 3" class="w-4 h-4">
                                 Vue 3
                             </h3>
                             <p class="text-sm text-subtle">Reactive frontend SPA</p>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
+                            <h3 class="text-white mb-1 flex items-center gap-2">
+                                Inertia.js
+                            </h3>
+                            <p class="text-sm text-subtle">Server-driven SPA routing</p>
                         </div>
                         <div class="bg-white/5 rounded-xl p-4 border border-white/[0.06]">
                             <h3 class="text-white mb-1 flex items-center gap-2">
