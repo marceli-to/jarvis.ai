@@ -172,15 +172,15 @@
                     </div>
                 </div>
                 
-                <div class="card">
+                <a href="/project/kokoro-tts" class="card hover:border-white/20 transition-colors group">
                     <div class="flex items-start gap-4">
-                        <i class="ph ph-palette text-2xl text-white/70" aria-hidden="true"></i>
+                        <i class="ph ph-speaker-high text-2xl text-white/70 group-hover:text-white transition-colors" aria-hidden="true"></i>
                         <div>
-                            <h3 class="text-white mb-1">Creative</h3>
-                            <p class="text-muted text-sm">Images, voice, design</p>
+                            <h3 class="text-white mb-1">Voice</h3>
+                            <p class="text-muted text-sm">Local TTS in 9 languages</p>
                         </div>
                     </div>
-                </div>
+                </a>
                 
             </div>
         </div>

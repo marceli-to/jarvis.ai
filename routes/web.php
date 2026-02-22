@@ -14,6 +14,7 @@ Route::view('/project/doodle-horde-2026', 'projects.doodle-horde')->name('projec
 Route::view('/project/aicms', 'projects.aicms')->name('project.aicms');
 Route::view('/project/dbadmin', 'projects.dbadmin')->name('project.dbadmin');
 Route::view('/project/vault', 'projects.vault')->name('project.vault');
+Route::view('/project/kokoro-tts', 'projects.kokoro-tts')->name('project.kokoro-tts');
 
 // Web portfolio
 Route::view('/web', 'web.index')->name('web.index');
